@@ -213,3 +213,32 @@
 		color: white;
 		border-right-style: none;
 	}
+
+/* ================
+   ANIMATED STYLE
+   ================ */
+
+.animated-button-1 {
+	position: relative;
+	display: inline-block;
+	padding: 20px 40px;
+	font-size: 1.4rem;
+	background-color: #00B3B4;
+	color: white;
+	background-image: url(pattern.png);
+	background-size: 40px 40px;
+	border: 1px solid #555;
+	transition: all 0.3s ease;
+	}
+
+	.animated-button-1:hover {
+		animation: loading-button-animation 2s linear infinite;
+	}
+	@keyframes loading-button-animation {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 40px 0;
+		}
+	}
