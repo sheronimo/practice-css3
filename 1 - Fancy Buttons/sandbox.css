@@ -192,3 +192,24 @@
 		background-image: linear-gradient(to top right, orangered, yellow);
 		color: white;
 	}
+
+.gradient-button-2 {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	font-size: 1.4rem;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	color: orangered;
+	background-color: #E7EEF1;
+	border: 4px solid transparent;
+	border-image: linear-gradient(to right, orangered, transparent);
+	border-image-slice: 1;
+	transition: all 0.3s ease-in-out;
+	}
+
+	.gradient-button-2:hover {
+		background-image: linear-gradient(to right, orangered, transparent);
+		color: white;
+		border-right-style: none;
+	}
