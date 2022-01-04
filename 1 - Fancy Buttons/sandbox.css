@@ -242,3 +242,32 @@
 			background-position: 40px 0;
 		}
 	}
+
+.animated-button-2 {
+	position: relative;
+	display: inline-block;
+	padding: 20px 40px;
+	font-size: 1.4rem;
+	background-color: #00B3B4;
+	color: white;
+	border: 1px solid #555;
+	transition: all 0.3s ease;
+	}
+
+	.animated-button-2::after {
+		position: absolute;
+		top: 30%;
+		right: 0.6em;
+		content: "\00BB";
+		transition: all 0.3s ease;
+		opacity: 0;
+	}
+
+	.animated-button-2:hover {
+		padding: 20px 60px 20px 20px;
+	}
+
+	.animated-button-2:hover::after {
+		right: 1.2em;
+		opacity: 1;
+	}
