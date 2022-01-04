@@ -325,3 +325,51 @@
 		content: "on";
 		color: #00B3B4;
 	}
+
+.toggle-2 {
+	font-family: 'Helvetica', sans-serif;
+	font-size: 0.8rem;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px 0 0;
+	}
+
+	.toggle-2__input {
+		display: none;
+	}
+
+	.toggle-2__button {
+		position: relative;
+		display: inline-block;
+		line-height: 20px;
+		text-transform: uppercase;
+		background: white;
+		color: #aaa;
+		border: 1px solid #CCC;
+		padding: 5px 10px 5px 30px;
+		transition: 0.3s all ease;
+		cursor: pointer;
+	}
+
+	.toggle-2__button::before {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background: #CCC;
+		content: "";
+		transition: 0.3s all ease;
+		border-radius: 100%;
+	}
+
+	.toggle-2__input:checked + .toggle-2__button {
+		background: #00B3B4;
+		border-color: #00B3B4;
+		color: white;
+	}
+
+	.toggle-2__input:checked + .toggle-2__button::before {
+		background: white;
+	}
