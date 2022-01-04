@@ -271,3 +271,57 @@
 		right: 1.2em;
 		opacity: 1;
 	}
+
+/* ================
+   TOGGLE STYLE
+   ================ */
+
+.toggle-1 {
+	font-family: 'Helvetica', sans-serif;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px 0 0;
+	}
+
+	.toggle-1__input {
+		display: none;
+	}
+
+	.toggle-1__button {
+		position: relative;
+		display: inline-block;
+		font-size: 0.9rem;
+		line-height: 20px;
+		text-transform: uppercase;
+		background-color: #F2395A;
+		border: 1px solid #F2395A;
+		color: white;
+		width: 80px;
+		height: 30px;
+		transition: 0.3s all ease;
+		cursor: pointer;
+	}
+
+	.toggle-1__button::before {
+		position: absolute;
+		top: 5px;
+		left: 38px;
+		content: "off";
+		display: inline-block;
+		height: 20px;
+		padding: 0 3px;
+		background: white;
+		color: #F2395A;
+		transition: 0.3s all ease;
+	}
+
+	.toggle-1__input:checked + .toggle-1__button {
+		background: #00B3B4;
+		border: 1px solid #00B3B4;
+	}
+
+	.toggle-1__input:checked + .toggle-1__button::before {
+		left: 5px;
+		content: "on";
+		color: #00B3B4;
+	}
